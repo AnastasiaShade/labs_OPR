@@ -39,7 +39,7 @@ void InitClockDots(RenderWindow &window, ClockFace &clockFace)
 		clockFace.dot[i].setFillColor(Color::Black);
 		clockFace.dot[i].setOrigin(clockFace.dot[i].getGlobalBounds().width / 2, clockFace.dot[i].getGlobalBounds().height / 2);
 		clockFace.dot[i].setPosition(x + window.getSize().x / 2, y + window.getSize().y / 2);
-		angle += ((2 * PI) / 60);
+		angle += ((2 * PI) / NUM_OF_DOTS);
 	}
 }
 
@@ -59,7 +59,7 @@ int InitDigits(RenderWindow &window, ClockFace &clockFace, Font &font)
 		clockFace.digit[i].setFillColor(Color::Black);
 		clockFace.digit[i].setOrigin(clockFace.digit[i].getGlobalBounds().width / 2, clockFace.digit[i].getGlobalBounds().height);
 		clockFace.digit[i].setPosition(x + window.getSize().x / 2, y + window.getSize().y / 2);
-		angle += ((2 * PI) / 12);
+		angle += ((2 * PI) / NUM_OF_DIGITS);
 	}
 	return EXIT_SUCCESS;
 }

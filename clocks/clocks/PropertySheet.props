@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <PropSheetPath>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))</PropSheetPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IncludePath>$(PropSheetPath)lib\sfml\include;C:\Users\Toshiba\Documents\Visual Studio 2015\Projects\clocks\clocks\SFML-2.4.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(PropSheetPath)lib\sfml\lib;C:\Users\Toshiba\Documents\Visual Studio 2015\Projects\clocks\clocks\SFML-2.4.0\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="PropSheetPath">
+      <Value>$(PropSheetPath)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
